@@ -3,4 +3,19 @@
   <%# TODO: 
   1. If user is not signed in - display "Welcome".
   2. If user is signed in then  display all users %>
+  <% if logged_in? %>
+  <% @users = User.all %>
+    <h1>Users:</h1>
+    <ul>
+      <% @users.each do |user| %>
+        <li><%=user.name%></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <h1 class="h1-center">WELCOME!</h1>
+    <img class="center" src="graphics/island_fox.jpg">
+    <h1 class="h1-center">I AM AN ISLAND FOX.</h1>
+    <h1 class="h1-center">SO I KNOW A LOT ABOUT FOXES.</h1>
+    <h1 class="h1-center">BECAUSE I AM ONE.</h1>
+  <% end %>
 </div>

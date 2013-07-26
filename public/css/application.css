@@ -1,13 +1,32 @@
 .container {
   margin: 20px auto;
-  width: 800px;
-  padding: 0px 20px 20px 20px;
+  width: 80%;
+  padding: 0px 20px 20px 8px;
   border: 1px dotted black;
 }
 
 .container h1 {
   font-size: 17pt;
 
+}
+
+.error {
+  color: red;
+  display: inline;
+}
+
+form {
+  display: inline;
+}
+
+h1.h1-center {
+  text-align: center;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
@@ -71,5 +90,5 @@ form.quirks {
   float: left;
   text-align: right;
   margin-right: 20px;
-  width: 200px;
+  width: 100px;
 }

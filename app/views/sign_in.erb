@@ -7,7 +7,9 @@
 
   <form id="sign-in" method="post" action="/sessions">
     <label class="label" for="email">Email</label>
-    <input type="email" name="email" placeholder="e.g., me@example.com" value="<%= @email %>"><br>
+    <input type="email" name="email" placeholder="e.g., me@example.com" value="<%= @email %>">
+    &nbsp;<div class="error"><% if @errors %><%=@errors%><% end %></div>
+    <br>
     <label class="label" for="password">Password</label>
     <input type="password" name="password" placeholder="6 or more characters">
     <br>
